@@ -1,7 +1,19 @@
 import streamlit as st
 import joblib
-import pandas as pd
+import zipfile
+import os
 
+MODEL_ZIP = "best_random_forest_model.zip"
+MODEL_FILE = "best_random_forest_model.pkl"
+
+# Extract model if not already extracted
+if not os.path.exists(MODEL_FILE):
+    with zipfile.ZipFile(MODEL_ZIP, "r") as zip_ref:
+        zip_ref.extractall()
+
+# Load model
+model = joblib.load(MODEL_FILE)
+label_encoder = joblib.load("label_encoder.pkl")
 # -----------------------------
 # Page Setup
 # -----------------------------
@@ -84,4 +96,5 @@ with center_col2:
 
         except Exception as e:
             st.error("Prediction failed.")
-            
+
+
