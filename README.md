@@ -85,13 +85,21 @@ Click Predict
 Get the predicted forest cover type
 
 🖥️ Running the Application
+
 1️⃣ Clone the repository
+
 git clone https://github.com/yourusername/ecotype-forest-prediction.git
+
 2️⃣ Navigate to the project folder
+
 cd ecotype-forest-prediction
+
 3️⃣ Install dependencies
+
 pip install -r requirements.txt
+
 4️⃣ Run the Streamlit app
+
 streamlit run app.py
 
 🎯 Features
