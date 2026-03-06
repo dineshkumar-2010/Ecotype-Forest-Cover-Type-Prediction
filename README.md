@@ -109,7 +109,7 @@ EcoType-Forest-Prediction
 
 ├── app.py
 
-├── best_random_forest_model.pkl
+├── best_random_forest_model.zip
 
 ├── label_encoder.pkl
 
