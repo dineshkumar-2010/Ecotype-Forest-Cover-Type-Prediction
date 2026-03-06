@@ -93,15 +93,7 @@ cd ecotype-forest-prediction
 pip install -r requirements.txt
 4️⃣ Run the Streamlit app
 streamlit run app.py
-📁 Project Structure
-EcoType-Forest-Prediction
-│
-├── app.py
-├── best_random_forest_model.pkl
-├── label_encoder.pkl
-├── forest_cover_prediction.ipynb
-├── requirements.txt
-└── README.md
+
 🎯 Features
 
 Data preprocessing and feature engineering
